@@ -10,14 +10,14 @@
 *	What is Web Development?
 *	Bash Commands
 *	Using GitHub
-*  Introduction to Ruby
+* Introduction to Ruby
 
 ---
 
 ##Web Development
 ###The Web Application Stack
 
-![WebStack](../../assets/command_line/server-side.jpg)
+![WebStack](assets/command_line/server-side.jpg)
 
 ---
 
@@ -27,6 +27,7 @@
 Let's define a few terms:
 
 * _Web Development_ -> apps built for the web
+* _Full-stack Development_ -> Applications built for the web
 * _Front-End Development_ -> client / browser code (HTML, CSS, JS)
 * _Back-End Development_ -> server-side code (Ruby, JS, GO, C#, .NET ... And many more)
 
@@ -67,6 +68,11 @@ Many of the tasks we need to carry out (such as committing our code) are best pe
 For Macs:
 
 * Open the "Terminal" app
+
+Navigate to `Terminal`
+
+`Applications > Utilities > Terminal`
+
 * For a better experience, download and install "iTerm 2", which is a replacement app that is slightly better.
 
 
@@ -89,13 +95,38 @@ For Windows:
 
 ---
 
-![GeneralAssemb.ly](../../assets/ICL_icons/Code_along_icon_md.png)
+`pwd` - Present working directory  
+`ls` - List the contents of the directory  
+`cd` - Change directories  
+`mkdir` - Create a new folder  
+`rmdir` - Remove an empty folder  
+`rm` - Remove a file  
+`touch` - Create an empty file  
+`echo` - Return a string  
+`subl` - Open sublime text  
+
+===
+
+`open` - Open particular files in their default application  
+`say` - Knight Riderify your computer  
+
+---
+
+### Always know where you are
+
+`./` - The current folder  
+`../` - One folder above your current working directory  
+`~/` - The home folder  
+
+---
+
+![GeneralAssemb.ly](assets/ICL_icons/Code_along_icon_md.png)
 ##Command Line Basics
 
 ---
 
 
-![GeneralAssemb.ly](../../assets/ICL_icons/Exercise_icon_md.png)
+![GeneralAssemb.ly](assets/ICL_icons/Exercise_icon_md.png)
 ##Command Line Basics Exercise
 
 ---
@@ -122,15 +153,29 @@ For Windows:
 
 ---
 
+
 ##Git
 ###Git + GitHub Workflow Diagram
 
-![GeneralAssemb.ly](../../assets/GitHub/git_general_diagram.png)
+![GeneralAssemb.ly](assets/GitHub/git_general_diagram.png)
 
 ---
 
 
-![GeneralAssemb.ly](../../assets/ICL_icons/Code_along_icon_md.png)
+## Git
+__Common commands__
+
+`git init` - Add git to the current folder  
+`git add path/to/file` - Adds files to the "stage"  
+`git reset HEAD path/to/file` - Removes files from the "stage"  
+`git checkout path/to/file` - Undo any changes to the file specified (changes are gone forever)  
+`git commit -m "Commit message"` - Commit the files to the timeline  
+`git log` - View the timeline  
+`git status` - View the current state of the repository  
+
+---
+
+![GeneralAssemb.ly](assets/ICL_icons/Code_along_icon_md.png)
 ##Git Basics
 
 ---
@@ -149,27 +194,65 @@ For Windows:
 ##GitHub
 ###GitHub Forks Diagram
 
-![ Git In Class Diagram](../../assets/GitHub/fork_Diagram.png)
+![ Git In Class Diagram](assets/GitHub/fork_Diagram.png)
 
 ---
 
 
 
-![GeneralAssemb.ly](../../assets/ICL_icons/Code_along_icon_md.png)
+![GeneralAssemb.ly](assets/ICL_icons/Code_along_icon_md.png)
 ##Git In Class
 
 ---
 
 
-![GeneralAssemb.ly](../../assets/ICL_icons/Exercise_icon_md.png)
+![GeneralAssemb.ly](assets/ICL_icons/Exercise_icon_md.png)
 ## Git It Together
 
 ---
 
+## Enter, Ruby
 
-## Homework
+```ruby
+def underscoreize(string)
+  string.downcase.gsub(' ', '_')
+end
 
-*	Review command line and GitHub.
+full_names = [
+  'Brooks Swinnerton',
+  'Luna The Cat',
+  'Otto The Cat'
+]
 
+full_names.each do |name|
+  %x( mkdir #{underscoreize(name)} )
+  %x( touch #{underscoreize(name)}/.gitkeep )
+end
+```
 
 ---
+
+## GitHub Forks
+
+Developers are the biggest pirates in the world.
+
+![stealing](http://media.giphy.com/media/3I0Fler5qUsU0/giphy.gif)
+
+But it's encouraged! Enter, the fork.
+
+---
+
+## GitHub Exercise
+[![exercise](https://www.dropbox.com/s/do5viuc8pas6orh/exercise.png?dl=1)](https://materials.generalassemb.ly/bewd/13/lessons/1#classwork)
+
+---
+
+## Homework
+<br><br>
+
+* Review command line and GitHub
+* Submit a recent profile picture to GitHub if you have not already
+* Email one of us the link to your GitHub account if you have not already
+
+> Email: bewd-nyc-15-instructors@ga-groups.com
+
