@@ -69,9 +69,9 @@ For Macs:
 
 * Open the "Terminal" app
 
-Navigate to `Terminal`
+  Navigate to `Terminal`
 
-`Applications > Utilities > Terminal`
+  `Applications > Utilities > Terminal`
 
 * For a better experience, download and install "iTerm 2", which is a replacement app that is slightly better.
 
@@ -95,28 +95,26 @@ For Windows:
 
 ---
 
-`pwd` - Present working directory  
-`ls` - List the contents of the directory  
-`cd` - Change directories  
-`mkdir` - Create a new folder  
-`rmdir` - Remove an empty folder  
-`rm` - Remove a file  
-`touch` - Create an empty file  
-`echo` - Return a string  
-`subl` - Open sublime text  
+* `pwd` - Present working directory  
+* `ls` - List the contents of the directory  
+* `cd` - Change directories  
+* `mkdir` - Create a new folder  
+* `rmdir` - Remove an empty folder  
+* `rm` - Remove a file  
+* `touch` - Create an empty file  
+* `echo` - Return a string  
+* `subl` - Open sublime text  
+* `open` - Open particular files in their default application  
 
-===
-
-`open` - Open particular files in their default application  
-`say` - Knight Riderify your computer  
+<!-- * `say` - Knight Riderify your computer   -->
 
 ---
 
 ### Always know where you are
 
-`./` - The current folder  
-`../` - One folder above your current working directory  
-`~/` - The home folder  
+* `./` - The current folder  
+* `../` - One folder above your current working directory  
+* `~/` - The home folder  
 
 ---
 
@@ -165,13 +163,13 @@ For Windows:
 ## Git
 __Common commands__
 
-`git init` - Add git to the current folder  
-`git add path/to/file` - Adds files to the "stage"  
-`git reset HEAD path/to/file` - Removes files from the "stage"  
-`git checkout path/to/file` - Undo any changes to the file specified (changes are gone forever)  
-`git commit -m "Commit message"` - Commit the files to the timeline  
-`git log` - View the timeline  
-`git status` - View the current state of the repository  
+* `git init` - Add git to the current folder  
+* `git add path/to/file` - Adds files to the "stage"  
+* `git reset HEAD path/to/file` - Removes files from the "stage"  
+* `git checkout path/to/file` - Undo any changes to the file specified (changes are gone forever)  
+* `git commit -m "Commit message"` - Commit the files to the timeline  
+* `git log` - View the timeline  
+* `git status` - View the current state of the repository  
 
 ---
 
