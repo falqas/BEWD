@@ -25,9 +25,9 @@
 3.	How do I add files to git?
 4.	What is a GitHub Repository?
 5.  What is the correct way to push changes to your GitHub repo?
-	a. git pull origin master
-	b. git commit -m "push to GitHub"
-	c. git push origin master
+  * `git pull origin master`
+	* `git commit -m "push to GitHub"`
+	* `git push origin master`
 
 ---
 
@@ -50,7 +50,11 @@ expect(page).to_not have_content 'Twitter is over capacity'
 *	An open source programming language
 *	Easy to read and natural to write
 *	Created by Yukihiro Matsumoto (aka Matz) with the goal of building a language FOR developers
-*	Regularly maintained and evolved (recently reached version 2.0.0)
+*	Regularly maintained and evolved (recently reached version 2.1.3)
+* Written in C
+* Dynamic scripting language
+* Memory is managed for you
+* Object oriented, and _fun_
 
 <div style="text-align:center;">
   <img src="assets/ruby/ruby_img.png" />
@@ -58,28 +62,16 @@ expect(page).to_not have_content 'Twitter is over capacity'
 
 ---
 
-## Ruby
-
-![matz](https://www.dropbox.com/s/089aa114s456ukn/matz.jpg?dl=1)
-
-- Created by Yukihiro Matsumoto (aka "Matz") in the mid-90s
-- Written in C
-- Dynamic scripting language
-- Memory is managed for you
-- Object oriented, and _fun_
-
----
-
 ##Rails
 ###A web application framework
-
-![dhh](https://www.dropbox.com/s/q0goug7kx68vhtc/dhh.png?dl=1)
 
 *	Open source web application framework that is built in Ruby
 *	Allows you to create web applications that query a database.
 *	Created by DHH (David Heinemer Hansson) to simplify the task of building web applications, with the help of _conventions_
 * By 2007, all Apple computers were shipping with Rails pre-installed
 * Written in Ruby
+
+![dhh](https://www.dropbox.com/s/q0goug7kx68vhtc/dhh.png?dl=1)
 
 ---
 
@@ -130,8 +122,8 @@ expect(page).to_not have_content 'Twitter is over capacity'
 2. Writing a script and executing it with the `ruby` command:
 
   ```bash
-  echo "puts 'hello world'" > ~/Desktop/first_program.rb
-  ruby ~/Desktop/first_program.rb
+  echo "puts 'hello world'" > ~/Sites/first_program.rb
+  ruby ~/Sites/first_program.rb
   ```
 
 ---
