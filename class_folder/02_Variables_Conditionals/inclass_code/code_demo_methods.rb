@@ -6,13 +6,17 @@
 #1 - Let's say we wanted to perform the task of multiplying 22 by 44  
 ###########
 ###########
+
+22*44
 	
 #2 - Great, what if we wanted to multiply 22*4 again. If we had to type that out each time, it would be inefficient
 # So, let's try and save that code to a method...
 ###########
 ###########
 
-
+def multiply
+	22*44
+end
 
 # NOTE: Running this does not return 968! How come?
 
@@ -21,7 +25,7 @@
 ###########
 ###########
 
-
+multiply
 
 ##4 - Now, let's say we wanted to make it a little smarter. Our  method will take two parameters passed to it.
 # Let's name the parameters as variables x and y
@@ -29,30 +33,37 @@
 ###########
 ###########
 
+def multiply (x,y)
+	x*y
+end
 
 
 #5 - Now CALL that method:
 ###########
 ###########
 
-
+multiply 22,4
 
 #6 - Other People's methods. Two of the most common methods we will use throughout this class are puts and gets.
 # Let's start with puts...
 ###########
 ###########
 
+puts multiply(22,4)
 
 #7 - One more thing! - When you are calling a method with parameters, using the parenthesis () is OPTIONAL
 ###########
 ###########
 
-
+puts multiply 22,4
 
 #8 - Now, let's look at gets
 ###########
 ###########
 
+x = gets.to_i
+y = gets.to_i
+puts multiply x,y
 
 #9 - So far, we have only been calling methods on their own
 # However, you can also call methods on STRINGS and INTEGERS! Crazy, huh? Let's try.
