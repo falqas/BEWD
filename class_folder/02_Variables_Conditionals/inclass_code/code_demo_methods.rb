@@ -2,16 +2,21 @@
 # => While you instructor code these methods in irb you should take notes here.
 
 
-
+$foo = 5
 #1 - Let's say we wanted to perform the task of multiplying 22 by 44  
 ###########
+22*44
 ###########
 	
 #2 - Great, what if we wanted to multiply 22*4 again. If we had to type that out each time, it would be inefficient
 # So, let's try and save that code to a method...
 ###########
-###########
 
+def multiply(x=22,y=44)
+	puts x*y
+	$foo = 10
+end
+###########
 
 
 # NOTE: Running this does not return 968! How come?
@@ -19,20 +24,26 @@
 
 ##3 - Let's call that method, by simply typing out its name:
 ###########
-###########
 
+multiply
+###########
+puts $foo -2
 
 
 ##4 - Now, let's say we wanted to make it a little smarter. Our  method will take two parameters passed to it.
 # Let's name the parameters as variables x and y
 # and then multiply them together.
 ###########
+y = "text"
+y = y.capitalize
+puts "#{y} has #{y.length} letters"
 ###########
 
 
 
 #5 - Now CALL that method:
 ###########
+multiply(2,10)
 ###########
 
 
