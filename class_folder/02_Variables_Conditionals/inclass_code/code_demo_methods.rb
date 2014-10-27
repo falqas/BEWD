@@ -6,13 +6,17 @@
 #1 - Let's say we wanted to perform the task of multiplying 22 by 44  
 ###########
 ###########
-	
+
 #2 - Great, what if we wanted to multiply 22*4 again. If we had to type that out each time, it would be inefficient
 # So, let's try and save that code to a method...
 ###########
 ###########
 
 
+def multiply
+	22*44
+end
+multiply
 
 # NOTE: Running this does not return 968! How come?
 

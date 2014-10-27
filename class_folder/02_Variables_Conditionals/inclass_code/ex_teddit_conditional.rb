@@ -6,6 +6,7 @@
 
 def get_input
   #Get input from the user.
+  gets.strip
 end
 
 def calculate_upvotes(story, category)
@@ -16,6 +17,17 @@ def calculate_upvotes(story, category)
 
 	#For example:
 	# "Cats frolic despite tuna shortage" should give you 5 times the upvotes!
+	upvotes = 1
+	if story.downcase.include? "cats"
+		upvotes = upvotes * 5
+	elsif 
+		story.downcase.include? "bacon"
+		upvotes = upvotes * 8
+	elsif 
+		story.downcase.include? "food"
+		upvotes = upvotes * 3
+	end
+
 end
 
 puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
