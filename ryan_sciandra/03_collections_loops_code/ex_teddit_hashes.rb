@@ -7,12 +7,12 @@ end
 
 def calculate_upvotes(story, category)
   upvotes = 1
-  if story.downcase.include? 'cat'
-    upvotes *= 5
-  elsif story.downcase.include? 'bacon'
+  if story.downcase.include? 'bacon'
     upvotes *= 8
+  elsif story.downcase.include? 'cat'
+    upvotes *= 5
   end
-  if category.downcase == "food"
+  if category.downcase.include? 'food'
     upvotes *= 3
   end
   upvotes

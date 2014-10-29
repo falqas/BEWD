@@ -32,9 +32,7 @@ begin
 	stay_go = get_input
 end until stay_go == "n"
 
-stories.each do |show|
-	puts "New story added! '#{stories[:title]}', Category: #{stories[:location]}, Current Upvotes: #{stories[:votes]}!"
-end
+puts "New story added! #{stories[:title]} , Category: #{stories[:location]}, Current Upvotes: #{stories[:votes]}!"
 
 # puts "New story added! " stories[:title].each{|story| puts story} ",Category: " stories[:location].each{|category| puts category} ", Current Upvotes: " stories[:votes].each{|calculate_upvotes(story, category)| puts calculate_upvotes(story, category)} "!"
 
