@@ -4,6 +4,7 @@
 # Complete the application below. 
 # Where you see comments (lines that begin with #) replace it with code so that the program works.
 
+
 def get_input(question)
 	# ask question 
   	# check to make sure something has been entered:
