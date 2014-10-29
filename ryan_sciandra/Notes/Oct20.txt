@@ -1,0 +1,19 @@
+Push Files
+1. Step into the directory you want to add file to
+2. Add/create (touch) file ...
+3. In Terminal enter - git status
+4. Look for created file ...
+5. In Terminal enter - git add "filename"
+6. In Terminal enter - git status - again and make sure that your filename appears in green.
+7. In Terminal enter - git commit -m "ENTER YOUR MESSAGE"
+8. Lastly, in Terminal enter - git push origin master
+9. That should push all files to GitHub, the next steps are done through the GitHub website.
+
+On GitHub Pull Requests
+1. Go to GitHub and log in
+2. Navigate to the Parent Directory you want to do a Pull Request to
+3. Click the little green button at the upper left of the screen
+4. Then click the compare across forks link at the top of the page
+5. Select your folder from the third drop down
+6. Add message if desired and submit.
+
