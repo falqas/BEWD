@@ -5,6 +5,10 @@ def get_input
 
 end
 
+def standard_response
+
+	puts 
+
 # This takes the users inputs and determines what response to return and what upvote calculation to use.
 def calculate_upvotes(story, category)
 
