@@ -7,7 +7,7 @@
 def get_input
   gets.strip
 end
-upvotes=54.0
+upvotes=54	2
 def calculate_upvotes(story, category)
 	# Write code so that:
 		# If the Story is about cats multiply the upvotes by 5
