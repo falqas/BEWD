@@ -15,7 +15,7 @@
 # Once the user is finished with entering their stories, use .each to print each story in the stories array. 
 #
 #
-
+require "pry"
 #methods
 def get_input(question)
 	# ask question 
@@ -50,48 +50,51 @@ end
 
 def calculate_grade(total_points)
 	if total_points < 10 then
-		return "your story straightout blows!"
+		 "your story straightout blows!"
 	elsif total_points < 20 then
-		return "yeah, right! "
+		 "yeah, right! "
 	elsif total_points < 50 then
-		return "nice story. I almost managed to stay awake"
+		 "nice story. I almost managed to stay awake"
 	elsif total_points < 100 then
-		return "Great Story Bro!"
+		 "Great Story Bro!"
 	else 
-		return "We discovered the new editor in chief for NY Times!"
+		 "We discovered the new editor in chief for NY Times!"
 	end		
 end
 
-def saveToFile(array_to_write)
+
+def save_to_file(array_to_write)
 	open('myfile.txt', 'a') { |f|
-  f.puts "Hello, world."
+		array_to_write.each	do |i|
+			f.puts "Story: #{i[:story]}, Category: #{i[:category]}, Current Upvotes: #{i[:upvotes]}"
+		end	
 }
 end
 
-# Create an empty stories array. This will be used to hold all stories we capture.
 #variables
-stories = Array.new
-$keepAsking = true
-$total_upvotes = 0
+stories = Array.new #[]
+keepAsking = true
+total_upvotes = 0
 
 #the program
 puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
-while $keepAsking do
+while keepAsking do
 	story = get_input("Please enter a News story:")
 	category = get_input("Please give it a category:")
 	upvotes = calculate_upvotes(story, category)
-	$total_upvotes +=upvotes
+	total_upvotes +=upvotes
+	binding.pry
 	# create new to hash 
-	story_hash = { :story => story, :category=> category, :upvotes=> upvotes}
+	story_hash = { story: story, category: category, upvotes: upvotes }
 
 	# Add the hash to an array called stories and print "Story: Monkeys thank mayor for flounder tooth necklace, Category: (Teeth), Current Upvotes: 1"
-	stories<< story_hash
-	puts story_hash.to_a.join(', ')
+	stories<< story_hash	#push
+	puts "new story added!	Story: #{story_hash[:story]}, Category: #{:category}, Current Upvotes: #{:upvotes}"
 	
-	if (get_input("Would you like to add another story? Enter 'y' or 'n'") == 'n') then 
-		$keepAsking =  false 
+	if (get_input("Would you like to add another story? Enter 'y' or 'n'").strip.downcase == 'n') then 
+		keepAsking =  false 
 	end
 end
 
-saveToFile(stories)
-puts "#{calculate_grade($total_upvotes)} You achieved #{$total_upvotes} upvotes in total from #{stories.count} stories. Good Bye."
+save_to_file(stories)
+puts "#{calculate_grade(total_upvotes)} You achieved #{total_upvotes} upvotes in total from #{stories.count} stories. Good Bye."
