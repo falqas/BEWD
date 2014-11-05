@@ -1,3 +1,4 @@
+require 'pry'
 # Each & Map Exercise
 #
 # Below is an array of hashes, stored in a variable called `blog_posts`. Each
@@ -39,6 +40,8 @@ blog_posts = [
     tags: ['history', 'morality', 'prison']
   }
 ]
+
+binding.pry
 
 # There shouldn't be any need to edit anything above this line
 #
