@@ -15,10 +15,14 @@
 # Once the user is finished with entering their stories, use .each to print each story in the stories array. 
 #
 #
+
+# Teddit Contionals - Solution Code.
+
+# Let's add a new Teddit feature. Upvotes!
+
 def get_input
   gets.strip
 end
-stories = Array.new
 
 def calculate_upvotes(story, category)
   upvotes = 1
@@ -35,22 +39,11 @@ def calculate_upvotes(story, category)
 
   upvotes
 end
-		puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
-continue = 'y'
-until continue == 'n'
-	puts "Please enter a News story:"
-	story = get_input
-	puts "Please give it a category:"	
-	category = get_input
-	upvotes = calculate_upvotes(story, category)
-	new_story = {:upvotes=>upvotes, :category=>category,:title=>story}
-	stories << new_story
-	puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
-	puts "Would you like to add another story?  Enter y or n"
-	continue = get_input
-end
-stories.length.times do |n|
-	stories.keys.length.times do |x|
-		puts stories[n][new_story[x]]
-	end
-end
+
+puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
+puts "Please enter a News story:"
+story = get_input
+puts "Please give it a category:"
+category = get_input
+upvotes = calculate_upvotes(story, category)
+puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
